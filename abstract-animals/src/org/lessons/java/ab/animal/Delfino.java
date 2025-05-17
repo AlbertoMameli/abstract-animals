@@ -1,6 +1,6 @@
 package org.lessons.java.ab.animal;
 
-public class Delfino extends Animale {
+public class Delfino extends Animale implements Nuotanti {
     String eta;
     String provenienza;
 
@@ -42,6 +42,11 @@ public class Delfino extends Animale {
     public String getTipo() {
         return "Delfino";
 
+    }
+
+    @Override
+    public void nuota() {
+       System.out.println("Sto nuotando!!!");
     }
 
 }

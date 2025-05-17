@@ -1,6 +1,6 @@
 package org.lessons.java.ab.animal;
 
-public class Aquila extends Animale {
+public class Aquila extends Animale implements Volatili{
     private String colorePiume;
     private String larghezzaAli;
 
@@ -52,5 +52,10 @@ public class Aquila extends Animale {
                 ", razza = " + getRazza() +
                 ", apertura alare = " + larghezzaAli +
                 ", piumaggio = " + getColorePiume() + "]";
+    }
+
+    @Override
+    public void vola() {
+        System.out.println("Sto volando!!!");
     }
 }

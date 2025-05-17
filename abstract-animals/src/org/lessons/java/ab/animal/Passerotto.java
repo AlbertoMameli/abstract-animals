@@ -1,6 +1,6 @@
 package org.lessons.java.ab.animal;
 
-public class Passerotto extends Animale {
+public class Passerotto extends Animale implements Volatili {
     private String colorePiume;
     private String larghezzaAli;
 
@@ -45,15 +45,17 @@ public class Passerotto extends Animale {
 
     }
 
+    @Override
+    public String toString() {
+        return "Passerotto [nome = " + getNome() +
+                ", razza = " + getRazza() +
+                ", colore piume = " + colorePiume +
+                ", larghezza ali = " + larghezzaAli + "]";
+    }
 
     @Override
-    public String toString(){
-        return "Passerotto [nome = " + getNome() +
-           ", razza = " + getRazza() +
-           ", colore piume = " + colorePiume +
-           ", larghezza ali = " + larghezzaAli + "]";
-    } 
+    public void vola() {
+        System.out.println("Sto volando!!!!");
 
+    }
 }
-
-    
