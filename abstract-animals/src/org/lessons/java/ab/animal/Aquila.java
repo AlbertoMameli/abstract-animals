@@ -31,13 +31,13 @@ public class Aquila extends Animale implements Volatili{
 
     @Override
     public void verso() {
-        System.out.println("AAAhAAHAAHAHAHHAh");
+        System.out.println("il mio verso è `AAAhAAHAAHAHAHHAh`");
 
     }
 
     @Override
     public void mangia() {
-        System.out.println("Picoli animali");
+        System.out.println("mangio solitamente picoli animali");
     }
 
     @Override

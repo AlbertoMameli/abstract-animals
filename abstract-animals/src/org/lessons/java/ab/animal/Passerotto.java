@@ -29,13 +29,13 @@ public class Passerotto extends Animale implements Volatili {
 
     @Override
     public void verso() {
-        System.out.println("cip cip");
+        System.out.println("il mio verso è cip cip");
 
     }
 
     @Override
     public void mangia() {
-        System.out.println("briciole di pane");
+        System.out.println("mangio quasi sempre briciole di pane");
 
     }
 

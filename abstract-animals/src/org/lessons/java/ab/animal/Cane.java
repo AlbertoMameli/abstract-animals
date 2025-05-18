@@ -13,12 +13,12 @@ public class Cane extends Animale {
 
     @Override
     public void verso() {
-        System.out.println("Bau bau");
+        System.out.println("il mio verso è Bau bau");
     }
 
     @Override
     public void mangia() {
-        System.out.println("crocchette");
+        System.out.println("amo le crocchette");
     }
 
     @Override

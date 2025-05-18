@@ -29,13 +29,13 @@ public class Delfino extends Animale implements Nuotanti {
 
     @Override
     public void verso() {
-        System.out.println("fiiiiifffiiii");
+        System.out.println("il mio verso è fiiiiifffiiii");
 
     }
 
     @Override
     public void mangia() {
-        System.out.println("pesciolini");
+        System.out.println("mi nutro di pesciolini");
     }
 
     @Override
@@ -45,8 +45,16 @@ public class Delfino extends Animale implements Nuotanti {
     }
 
     @Override
+    public String toString() {
+        return "Delfino [nome = " + getNome() +
+                ", razza = " + getRazza() +
+                ", da dove viene = " + provenienza +
+                ", anni = " + eta + "]";
+    }
+
+    @Override
     public void nuota() {
-       System.out.println("Sto nuotando!!!");
+        System.out.println("Sto nuotando!!!");
     }
 
 }
